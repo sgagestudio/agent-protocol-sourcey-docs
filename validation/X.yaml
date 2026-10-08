@@ -9,6 +9,7 @@ catalog:
   execution: execute
   completion: runtime_receipt
   requires_adapter: false
+  approval: required
 
 runners:
   validate:
