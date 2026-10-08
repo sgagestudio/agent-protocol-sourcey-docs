@@ -1,0 +1,59 @@
+{
+    "summary":  "Sourcey-generated community API reference for LangChain Agent Protocol from a pinned upstream OpenAPI specification.",
+    "observations":  [
+                         {
+                             "key":  "source_repo",
+                             "value":  "https://github.com/langchain-ai/agent-protocol"
+                         },
+                         {
+                             "key":  "source_commit",
+                             "value":  "fb81f3e27ee507557926ecf923d0f933a1c76d44"
+                         },
+                         {
+                             "key":  "source_commit_date",
+                             "value":  "2026-09-22T11:50:48-04:00"
+                         },
+                         {
+                             "key":  "license",
+                             "value":  "MIT"
+                         },
+                         {
+                             "key":  "sourcey_version",
+                             "value":  "3.6.12"
+                         },
+                         {
+                             "key":  "runx_validation_version",
+                             "value":  "runx-cli 0.6.13"
+                         },
+                         {
+                             "key":  "build_command",
+                             "value":  "npx -y sourcey@3.6.12 build .\\upstream\\openapi.json --output .\\site"
+                         },
+                         {
+                             "key":  "paths",
+                             "value":  21
+                         },
+                         {
+                             "key":  "operations",
+                             "value":  27
+                         },
+                         {
+                             "key":  "schemas",
+                             "value":  33
+                         },
+                         {
+                             "key":  "generated_files",
+                             "value":  [
+                                           "site/api.html",
+                                           "site/index.html",
+                                           "site/llms-full.txt",
+                                           "site/llms.txt",
+                                           "site/search-index.json",
+                                           "site/sitemap.xml",
+                                           "site/sourcey.css",
+                                           "site/sourcey.js",
+                                           "site/_og/api.png"
+                                       ]
+                         }
+                     ]
+}
