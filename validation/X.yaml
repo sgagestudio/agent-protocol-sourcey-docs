@@ -1,0 +1,38 @@
+skill: sourcey-artifact-validator
+version: "0.1.0"
+
+catalog:
+  kind: skill
+  audience: public
+  visibility: public
+  role: context
+  execution: execute
+  completion: runtime_receipt
+  requires_adapter: false
+
+runners:
+  validate:
+    default: true
+    type: graph
+    inputs:
+      project:
+        type: string
+        required: true
+        description: "Repository root containing the generated Sourcey artifact."
+    graph:
+      name: sourcey-artifact-validator
+      result_from: [verify]
+      steps:
+        - id: verify
+          label: verify Sourcey artifact
+          tool: command.execute
+          scopes:
+            - process.exec
+          inputs:
+            command: node
+            args:
+              - validate-sourcey.mjs
+            cwd: "."
+            repo_root: $input.project
+            output_mode: json
+            timeout_ms: 60000
